@@ -539,4 +539,18 @@ body{
         width:90%;
         max-width:350px;
     }
+} 
+.producto h3{
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.producto{
+    display: flex;
+    flex-direction: column;
+}
+
+.boton{
+    margin-top: auto;
 }
