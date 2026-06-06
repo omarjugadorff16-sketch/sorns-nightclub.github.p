@@ -194,7 +194,7 @@ header::before{
     width:100%;
     height:100%;
 
-    background-image:url("../imagenes/estrellas_fondo_superior.png");
+    background-image:url("imagenes/estrellas_fondo_superior.png");
     background-size:cover;
     background-position:center;
 
