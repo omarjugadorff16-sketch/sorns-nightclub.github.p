@@ -402,3 +402,66 @@ body{
 .crystal{
     height:561px;
 }
+@media (max-width: 768px){
+
+    .galeria-producto{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .miniaturas{
+        flex-direction:row;
+        width:auto;
+        overflow-x:auto;
+    }
+
+    .miniaturas img{
+        width:70px;
+        height:70px;
+        flex-shrink:0;
+    }
+
+    .foto-principal{
+        width:90%;
+        height:auto;
+    }
+
+    .info-abajo{
+        flex-direction:column;
+        align-items:center;
+        gap:20px;
+    }
+
+    .info-producto{
+        width:90%;
+        margin-left:0;
+    }
+
+    .descripcion{
+        width:90%;
+    }
+
+    .nombre-del-producto{
+        font-size:1.5rem;
+        padding:0 15px;
+    }
+
+    .precio-paginas{
+        font-size:2rem;
+    }
+
+    .volver-container{
+        text-align:center;
+        margin:30px 0;
+    }
+
+    .productos{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .producto{
+        width:90%;
+        max-width:350px;
+    }
+}
