@@ -107,16 +107,8 @@ img{
     object-fit:contain;
     border-radius:10px;
 }
-.productos{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-.productos{
-    display:flex;
-    justify-content:center;
-    gap:30px;
-}
+
+
 .producto{
     display:flex;
     flex-direction:column;
@@ -536,15 +528,7 @@ body{
         font-size:0.9rem;
     }
 
-    .productos{
-        flex-direction:column;
-        align-items:center;
-    }
-
-    .producto{
-        width:90%;
-        max-width:350px;
-    }
+  
 } 
 .producto h3{
     height: 90px;
@@ -552,10 +536,7 @@ body{
     align-items: center;
     justify-content: center;
 }
-.producto{
-    display: flex;
-    flex-direction: column;
-}
+
 
 .boton{
     margin-top: auto;
@@ -631,4 +612,47 @@ nav i{
 .precio-paginas span{
     font-size: 1rem;
     color: gray;
+}
+.productos{
+    display:flex;
+    gap:25px;
+
+    overflow-x:auto;
+    overflow-y:hidden;
+
+    padding:20px;
+
+    scroll-snap-type:x mandatory;
+
+    scrollbar-width:none; /* Firefox */
+}
+
+.productos::-webkit-scrollbar{
+    display:none; /* Chrome, Edge, Opera */
+}
+.producto{
+    flex:0 0 300px;
+
+    scroll-snap-align:center;
+
+    transition:transform .3s ease,
+               box-shadow .3s ease;
+}
+.producto:hover{
+    transform:translateY(-8px) scale(1.03);
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.18),
+        0 0 20px rgba(139,92,246,.25);
+}
+.productos{
+    -webkit-overflow-scrolling:touch;
+    scroll-behavior:smooth;
+}
+.productos{
+    cursor:grab;
+}
+
+.productos:active{
+    cursor:grabbing;
 }
