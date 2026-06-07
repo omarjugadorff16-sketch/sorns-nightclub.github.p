@@ -624,14 +624,16 @@ nav i{
 
     scroll-snap-type:x mandatory;
 
-    scrollbar-width:none; /* Firefox */
+    scrollbar-width:none; 
 }
 
 .productos::-webkit-scrollbar{
-    display:none; /* Chrome, Edge, Opera */
+    display:none; 
 }
-.producto{
-    flex:0 0 300px;
+
+  .producto{
+    flex:0 0 320px;
+
 
     scroll-snap-align:center;
 
@@ -655,4 +657,12 @@ nav i{
 
 .productos:active{
     cursor:grabbing;
+}
+.productos{
+    scroll-snap-type:x mandatory;
+    scroll-behavior:smooth;
+}
+
+.producto{
+    scroll-snap-align:start;
 }
