@@ -614,3 +614,21 @@ nav i{
 *{
     -webkit-tap-highlight-color: transparent;
 }
+.talla{
+    font-size: 1.5rem;
+    color: #666;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.precio-paginas{
+    font-size: 3rem;
+    font-weight: 300;
+    margin-top: 0;
+}
+
+.precio-paginas span{
+    font-size: 1rem;
+    color: gray;
+}
