@@ -614,10 +614,10 @@ nav i{
     color: gray;
 }
 .productos{
-    display:flex;
-    gap:25px;
+    
+    
 
-    overflow-x:auto;
+    
     overflow-y:hidden;
 
     padding:20px;
@@ -648,7 +648,7 @@ nav i{
         0 0 20px rgba(139,92,246,.25);
 }
 .productos{
-    -webkit-overflow-scrolling:touch;
+    
     scroll-behavior:smooth;
 }
 .productos{
@@ -665,4 +665,13 @@ nav i{
 
 .producto{
     scroll-snap-align:start;
+}
+.productos{
+    display:flex;
+    overflow-x:auto;
+    gap:15px;
+
+   
+
+    -webkit-overflow-scrolling:auto;
 }
